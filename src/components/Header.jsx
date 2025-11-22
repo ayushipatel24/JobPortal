@@ -48,7 +48,7 @@ function Header() {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-700 absolute top-5 right-5 "
+                className="text-gray-700 absolute right-5 top-5  "
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
