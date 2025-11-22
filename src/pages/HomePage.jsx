@@ -8,8 +8,19 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[F5F7FF] ">
       {/* Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6  py-16 ">
+
+        <div className="absolute inset-0">
+        <img
+          src="/bglines.jpg"
+          alt="Hero Background"
+          className="w-full h-full object-cover opacity-20"
+        />
+        {/* White overlay (optional) */}
+        <div className="absolute inset-0 bg-white/40"></div>
+        </div>
+
+        <div className="text-center relative">
           <p className="text-blue-600 mb-4">We Have 208,000+ Live Jobs</p>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Your <span className="text-blue-600">Dream</span> Job Is Waiting For You
@@ -65,7 +76,7 @@ export default function HomePage() {
       </div>
 
       {/* How It Works Section */}
-      <div className="bg-white py-16">
+      <div className="bg-white py-16 mt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-blue-600 mb-2">How It Work</p>
