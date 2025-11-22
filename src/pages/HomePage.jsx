@@ -3,7 +3,7 @@ import { Search, MapPin, Briefcase, FileText, CheckCircle, Menu, X } from 'lucid
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
-  
+
 
   return (
     <div className="min-h-screen bg-[F5F7FF] ">
@@ -11,13 +11,13 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6  py-16 ">
 
         <div className="absolute inset-0">
-        <img
-          src="/bglines.jpg"
-          alt="Hero Background"
-          className="w-full h-full object-cover opacity-20"
-        />
-        {/* White overlay (optional) */}
-        <div className="absolute inset-0 bg-white/40"></div>
+          <img
+            src="/bgglines.jpg"
+            alt="Hero Background"
+            className="w-full h-full object-cover opacity-20"
+          />
+          {/* White overlay (optional) */}
+          <div className="absolute inset-0 bg-blue/20"></div>
         </div>
 
         <div className="text-center relative">
@@ -67,10 +67,25 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Company Logos */}
-        <div className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-40">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div key={i} className="text-gray-400 font-bold text-xl">Logo</div>
+
+        <div className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-100">
+          {[
+            "/logos/ad1.png",
+            "/logos/de1.png",
+            "/logos/del1.png",
+            "/logos/f1.png",
+            "/logos/g1.png",
+            "/logos/h1.png",
+            "/logos/k1.png",
+            "/logos/p1.png",
+            "/logos/pp1.png",
+          ].map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              alt="Company Logo"
+              className="h-10 w-20 object-contain  transition duration-300"
+            />
           ))}
         </div>
       </div>
@@ -98,7 +113,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Create Account</h3>
               <p className="text-gray-600 text-sm">
-                
+
                 Sign up to begin your data-science journey.
               </p>
             </div>
@@ -110,7 +125,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">CV/Resume</h3>
               <p className="text-gray-600 text-sm">
-               Upload your resume for better job matches.
+                Upload your resume for better job matches.
               </p>
             </div>
 
@@ -154,7 +169,7 @@ export default function HomePage() {
           </button>
         </div>
       </div>
-      
+
     </div>
   );
 }
