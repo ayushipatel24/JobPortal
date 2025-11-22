@@ -10,11 +10,11 @@ export default function HomePage() {
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6  py-16 ">
 
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 ">
           <img
             src="/bgglines.jpg"
             alt="Hero Background"
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full md:h-120 object-cover opacity-20"
           />
           {/* White overlay (optional) */}
           <div className="absolute inset-0 bg-blue/20"></div>
@@ -68,7 +68,12 @@ export default function HomePage() {
         </div>
 
 
-        <div className="mt-16 flex flex-wrap justify-center items-center gap-8 opacity-100">
+        
+      </div>
+
+      {/* How It Works Section */}
+      <div className="bg-white mt-20">
+        <div className="mt-12 mb-15 flex flex-wrap justify-center items-center gap-8 opacity-100">
           {[
             "/logos/ad1.png",
             "/logos/de1.png",
@@ -88,10 +93,6 @@ export default function HomePage() {
             />
           ))}
         </div>
-      </div>
-
-      {/* How It Works Section */}
-      <div className="bg-white py-16 mt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <p className="text-blue-600 mb-2">How It Work</p>
@@ -159,7 +160,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-blue-600 mb-2">Recent Job</p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Over all 10,00+ Talented People Registered in Our Website
+            Over all 1000+ Talented People Registered in Our Website
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8">
             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.

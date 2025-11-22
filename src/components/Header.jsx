@@ -12,7 +12,6 @@ function Header() {
           <div className="flex justify-center items-center h-16 ">
             <div className="flex items-center mt-2 fixed left-10 ">
                 <img src="/logo.png" className="w-25 h-25 object-cover object-center" alt="" />
-              {/* <span className="text-2xl font-bold text-blue-600">JobBoard</span>  */}
             </div>
             
             {/* Desktop Menu */}
