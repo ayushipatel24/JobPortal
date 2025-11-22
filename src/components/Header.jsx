@@ -69,6 +69,11 @@ function Header() {
               <Link className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded" to='/blog'>
               BLOG
               </Link>
+              <Link to='/login' >
+              <button className="w-full bg-[#2962FF] text-white px-4 py-2 rounded hover:bg-blue-700 mt-2">
+                Login
+              </button>
+              </Link>
               <Link to='/signup' >
               <button className="w-full bg-[#2962FF] text-white px-4 py-2 rounded hover:bg-blue-700 mt-2">
                 Sign Up
