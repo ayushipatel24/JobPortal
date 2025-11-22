@@ -48,7 +48,7 @@ function Header() {
             <div className="md:hidden">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-gray-700"
+                className="text-gray-700 absolute top-5 right-5 "
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
               </button>
@@ -58,7 +58,7 @@ function Header() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-white border-t">
+          <div className="md:hidden bg-white border-t ">
             <div className="px-4 pt-2 pb-3 space-y-1">
               <Link className="block px-3 py-2 text-gray-700 hover:bg-gray-100 rounded" t0='/aboutus' >
               ABOUT US
