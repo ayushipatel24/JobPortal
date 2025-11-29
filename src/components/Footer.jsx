@@ -3,7 +3,7 @@ import { Search, MapPin, Briefcase, FileText, CheckCircle, Menu, X } from 'lucid
 
 function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="w-full bg-[#F3F6FF]">
         {/* CTA Section */}
         <div className="bg-[#2962FF] py-8 mx-4 sm:mx-6 lg:mx-8 my-8 rounded-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
@@ -18,7 +18,8 @@ function Footer() {
         </div>
 
         {/* Footer Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+       
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-26 py-12 bg-gray-100">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {/* Brand */}
             <div>
@@ -49,12 +50,12 @@ function Footer() {
             <div>
               <h4 className="font-bold text-gray-900 mb-4">Category</h4>
               <ul className="space-y-2 text-gray-600 text-sm">
-                <li><a href="#" className="hover:text-blue-600">Data Analyst</a></li>
-                <li><a href="#" className="hover:text-blue-600">Data Scientist</a></li>
-                <li><a href="#" className="hover:text-blue-600">Data Engineer</a></li>
-                <li><a href="#" className="hover:text-blue-600">Data Administrator</a></li>
-                <li><a href="#" className="hover:text-blue-600">Machine Learning Engineer</a></li>
-                <li><a href="#" className="hover:text-blue-600">More</a></li>
+                <li><a href="" className="hover:text-blue-600">Data Analyst</a></li>
+                <li><a href="" className="hover:text-blue-600">Data Scientist</a></li>
+                <li><a href="" className="hover:text-blue-600">Data Engineer</a></li>
+                <li><a href="" className="hover:text-blue-600">Data Administrator</a></li>
+                <li><a href="" className="hover:text-blue-600">Machine Learning Engineer</a></li>
+                <li><a href="" className="hover:text-blue-600">More</a></li>
               </ul>
             </div>
 
@@ -89,7 +90,9 @@ function Footer() {
 
           {/* Copyright */}
           <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-600 text-sm">
-            Copyright © 2025 Davethew. All Rights Reserved
+            Copyright © 2025 
+           <span style={{color: '#0d6efd', fontWeight: 600}}>Dataxhire/Job. </span>
+            All Rights Reserved
           </div>
         </div>
       </footer>

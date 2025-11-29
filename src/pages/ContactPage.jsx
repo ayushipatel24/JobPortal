@@ -28,11 +28,19 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen ">
       {/* Header */}
-      <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 text-9xl font-bold flex items-center justify-center">
-          <img src="/contact.webp" className="w-full h-full object-cover object-center" alt="" />
+      
+      <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-16 relative overflow-hidden h-[300px] flex items-center justify-center">
+        {/* Background image (absolute, low-opacity) */}
+        <div className="absolute inset-0">
+          <img
+            src="/contact.webp"
+            className="w-full h-full object-cover object-center opacity-10"
+            alt="background"
+          />
         </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+        {/* Centered content */}
+        <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-2">Contact Us</h1>
           <p className="text-gray-300">Home / Contact Us</p>
         </div>
@@ -158,7 +166,8 @@ export default function ContactPage() {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="h-full min-h-[400px] lg:min-h-full relative">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.99973753655!2d75.65046785384922!3d26.88514029972226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1647856598123!5m2!1sen!2sin"
+                src='https://www.google.com/maps?q=Money+Plant+Highstreet,+Jagatpur+Road,+Ahmedabad&output=embed'
+                
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '400px' }}

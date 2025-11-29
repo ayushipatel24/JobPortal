@@ -47,23 +47,31 @@ export default function AuthPages() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
-
-        <div className="py-8">
+    <div className="min-h-screen bg-white-50">
+      
+        <div className="">
           {/* Hero Header */}
-          <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-10 mb-8 relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10 text-9xl font-bold flex items-center justify-center">
-              <img src="/signup.jpg" className="w-full h-full object-cover object-center" alt="" />
-            </div>
-            <div className="relative max-w-4xl mx-auto px-4 text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-2">Login</h1>
-              <p className="text-gray-300">Home / Login</p>
-            </div>
-          </div>
+          
+          <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-16 relative overflow-hidden h-[300px] flex items-center justify-center mb-10">
+        {/* Background image (absolute, low-opacity) */}
+        <div className="absolute inset-0">
+          <img
+            src="/signup.jpg"
+            className="w-full h-full object-cover object-center opacity-10"
+            alt="background"
+          />
+        </div>
+
+        {/* Centered content */}
+        <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center px-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-2">Login</h1>
+          <p className="text-gray-300">Home / Login</p>
+        </div>
+      </div>
 
           {/* Login Form */}
-          <div className="max-w-md mx-auto px-4">
-            <div className="bg-white rounded-lg shadow-md p-8">
+          <div className="max-w-2xl mx-auto px-4 w-full max-w-3xl">
+            <div className="bg-white rounded-lg shadow-xl p-8  ">
               <h2 className="text-2xl font-bold text-gray-900 mb-2">LOGIN</h2>
               <p className="text-gray-600 text-sm mb-6">
                 If you have an account with us, please log in.
