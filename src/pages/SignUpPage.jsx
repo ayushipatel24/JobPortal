@@ -201,6 +201,8 @@
 
 import React, { useState } from 'react';
 import { Mail, Lock, User, Facebook, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
 
 export default function AuthPages() {
   const [currentPage, setCurrentPage] = useState('login'); // 'login' or 'signup'
@@ -251,7 +253,7 @@ export default function AuthPages() {
     <div className="min-h-screen bg-white-50 mt-px">
 
       {/* Hero Header */}
-      <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-12 relative overflow-hidden h-[160px] flex items-center justify-center mb-8">
+      <div className="bg-gradient-to-r from-gray-700 to-gray-800 text-white py-12 relative overflow-hidden h-[180px] flex items-center justify-center mb-8">
         {/* Background image (absolute, low-opacity) */}
         <div className="absolute inset-0">
           <img
@@ -263,9 +265,13 @@ export default function AuthPages() {
 
         {/* Centered content */}
         <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center px-4 text-center">
-          <h1 className="text-2xl md:text-3xl font-semibold mb-0">Register</h1>
-          <p className="text-gray-300 text-sm">Home / Register</p>
-        </div>
+  <h1 className="text-2xl md:text-3xl font-semibold mb-0">Register</h1>
+
+  <p className="text-white text-sm">
+    <Link to="/home" className="hover:underline text-white">Home</Link> / Register
+  </p>
+</div>
+
       </div>
 
       {/* Sign Up Form */}

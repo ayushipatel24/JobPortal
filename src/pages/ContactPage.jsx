@@ -242,6 +242,7 @@
 
 import React, { useState } from 'react';
 import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -279,10 +280,19 @@ export default function ContactPage() {
           />
         </div>
 
-        <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center px-4 text-center">
+        {/* <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center px-4 text-center">
           <h1 className="text-3xl md:text-4xl font-semibold mb-1">Contact Us</h1>
           <p className="text-gray-300 text-sm">Home / Contact Us</p>
-        </div>
+        </div> */}
+
+        <div className="relative max-w-7xl mx-auto flex flex-col items-center justify-center px-4 text-center">
+  <h1 className="text-2xl md:text-3xl font-semibold mb-0">Contact Us</h1>
+
+  <p className="text-white text-sm">
+    <Link to="/home" className="hover:underline text-white">Home</Link> / Contact Us
+  </p>
+</div>
+
       </div>
 
       {/* Contact Section */}
